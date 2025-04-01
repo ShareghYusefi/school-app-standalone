@@ -1,6 +1,7 @@
 <h2>Courses</h2>
 <ul>
   <li *ngFor="let course of courses">
-    {{ course }}
+    <!-- we can pass the course object to the course component input property named course -->
+    <course [course]="course"></course>
   </li>
 </ul>

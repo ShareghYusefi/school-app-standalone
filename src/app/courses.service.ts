@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Course } from './course';
 
 // Injectable decorator lets angular know that this class can be injected into other classes
 @Injectable({
@@ -6,7 +7,11 @@ import { Injectable } from '@angular/core';
 })
 export class CoursesService {
   // private accessor limits access to only within class for defined variable.
-  private courses: string[] = ['math 101', 'science 101', 'biology 100'];
+  private courses: Course[] = [
+    { id: 1, name: 'math', level: 101 },
+    { id: 2, name: 'science', level: 101 },
+    { id: 3, name: 'biology', level: 100 },
+  ];
 
   constructor() {}
 
