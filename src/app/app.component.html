@@ -1,3 +1,14 @@
-<app-home></app-home>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <!-- We can use routerLink directive to allow routing in angular -->
+      <a routerLink="home" class="nav-link active" aria-current="page">Home</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="courses" class="nav-link">Courses</a>
+    </li>
+  </ul>
+</nav>
 
+<!-- router outlet will load in components based on route path -->
 <router-outlet />

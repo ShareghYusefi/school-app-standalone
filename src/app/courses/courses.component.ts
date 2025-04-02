@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CoursesService } from '../courses.service';
-import { JsonPipe, NgForOf } from '@angular/common';
+import { NgForOf } from '@angular/common';
 import { Course } from '../course';
 import { CourseComponent } from '../course/course.component';
 
 @Component({
   selector: 'courses',
-  imports: [NgForOf, JsonPipe, CourseComponent],
+  imports: [NgForOf, CourseComponent],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.css',
 })
