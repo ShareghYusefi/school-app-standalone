@@ -9,8 +9,8 @@ export class CoursesService {
   // private accessor limits access to only within class for defined variable.
   private courses: Course[] = [
     { id: 1, name: 'math', level: 101 },
-    { id: 2, name: 'science', level: 101 },
-    { id: 3, name: 'biology', level: 100 },
+    // { id: 2, name: 'science', level: 101 },
+    // { id: 3, name: 'biology', level: 100 },
   ];
 
   constructor() {}
